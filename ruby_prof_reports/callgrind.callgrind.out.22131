@@ -1,0 +1,358 @@
+events: wall_time
+
+fl=
+fn=IO::write^
+0 280
+
+fl=
+fn=JSON/Ext/Generator/State::initialize_copy
+0 1
+
+fl=
+fn=Kernel::initialize_dup
+0 2
+cfl=
+cfn=JSON/Ext/Generator/State::initialize_copy
+calls=1 0
+0 1
+
+fl=
+fn=Kernel::dup
+0 3
+cfl=
+cfn=Kernel::initialize_dup
+calls=1 0
+0 3
+
+fl=
+fn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+0 162
+cfl=
+cfn=Kernel::dup
+calls=1 0
+0 6
+
+fl=
+fn=Date::iso8601
+0 409
+
+fl=
+fn=Array::reverse
+0 35
+
+fl=
+fn=Date::<=>
+0 202
+
+fl=
+fn=Integer::div
+0 91
+
+fl=
+fn=String::[]=
+0 146
+
+fl=
+fn=MatchData::end
+0 76
+
+fl=
+fn=MatchData::begin
+0 331
+
+fl=
+fn=Regexp::match
+0 2283
+
+fl=
+fn=String::gsub!
+0 449
+
+fl=
+fn=Date::parse^
+0 2198
+cfl=
+cfn=String::gsub!
+calls=447 0
+0 449
+cfl=
+cfn=Regexp::match
+calls=894 0
+0 2283
+cfl=
+cfn=MatchData::begin
+calls=447 0
+0 331
+cfl=
+cfn=MatchData::end
+calls=447 0
+0 76
+cfl=
+cfn=String::[]=
+calls=447 0
+0 146
+cfl=
+cfn=Integer::div
+calls=447 0
+0 91
+
+fl=
+fn=Array::any?
+0 263
+cfl=
+cfn=String::upcase
+calls=216 130
+130 126
+
+fl=
+fn=Array::max
+0 26
+
+fl=
+fn=String::+
+0 43
+
+fl=
+fn=Integer::to_s
+0 43
+
+fl=
+fn=Array::sum
+0 19
+
+fl=
+fn=String::to_i
+0 195
+
+fl=
+fn=Hash::merge
+0 433
+
+fl=/Users/admin/VSCProjects/test/work.rb
+fn=Object::collect_stats_from_users
+38 11
+cfl=
+cfn=Array::each
+calls=7 39
+39 13205
+
+fl=/Users/admin/VSCProjects/test/work.rb
+fn=User::initialize
+11 51
+
+fl=
+fn=Class::new
+0 97
+cfl=/Users/admin/VSCProjects/test/work.rb
+cfn=User::initialize
+calls=83 0
+0 51
+
+fl=
+fn=Array::select
+0 9014
+
+fl=
+fn=Array::join
+0 200
+
+fl=
+fn=Array::uniq
+0 39
+
+fl=
+fn=Array::sort
+0 470
+cfl=
+cfn=Date::<=>
+calls=899 0
+0 202
+
+fl=
+fn=String::upcase
+0 437
+
+fl=
+fn=Array::map
+0 2672
+cfl=
+cfn=String::upcase
+calls=894 91
+91 284
+cfl=
+cfn=String::to_i
+calls=894 115
+115 195
+cfl=
+cfn=Date::parse^
+calls=447 140
+140 5574
+cfl=
+cfn=Date::iso8601
+calls=447 140
+140 409
+
+fl=
+fn=Array::all?
+0 7732
+cfl=
+cfn=String::upcase
+calls=111 135
+135 27
+
+fl=
+fn=Array::count
+0 21
+
+fl=/Users/admin/VSCProjects/test/work.rb
+fn=Object::parse_session
+27 641
+cfl=
+cfn=String::split
+calls=447 28
+28 718
+
+fl=/Users/admin/VSCProjects/test/work.rb
+fn=Object::parse_user
+17 70
+cfl=
+cfn=String::split
+calls=83 18
+18 138
+
+fl=
+fn=Array::each
+0 5553
+cfl=
+cfn=String::split
+calls=530 53
+53 804
+cfl=/Users/admin/VSCProjects/test/work.rb
+cfn=Object::parse_user
+calls=83 54
+54 209
+cfl=/Users/admin/VSCProjects/test/work.rb
+cfn=Object::parse_session
+calls=447 55
+55 1359
+cfl=
+cfn=Array::all?
+calls=530 81
+81 7759
+cfl=
+cfn=Array::select
+calls=83 101
+101 9014
+cfl=
+cfn=Class::new
+calls=83 102
+102 147
+cfl=
+cfn=Array::count
+calls=83 110
+110 16
+cfl=
+cfn=Hash::merge
+calls=581 110
+110 433
+cfl=
+cfn=Array::map
+calls=913 115
+115 8646
+cfl=
+cfn=Array::sum
+calls=83 115
+115 19
+cfl=
+cfn=Integer::to_s
+calls=166 115
+115 43
+cfl=
+cfn=String::+
+calls=166 115
+115 43
+cfl=
+cfn=Array::max
+calls=83 120
+120 26
+cfl=
+cfn=Array::sort
+calls=166 125
+125 581
+cfl=
+cfn=Array::join
+calls=83 125
+125 185
+cfl=
+cfn=Array::any?
+calls=83 130
+130 389
+cfl=
+cfn=Array::reverse
+calls=83 140
+140 35
+
+fl=
+fn=String::split
+0 1781
+
+fl=
+fn=IO::read^
+0 72
+
+fl=/Users/admin/VSCProjects/test/work.rb
+fn=Object::work
+46 54
+cfl=
+cfn=IO::read^
+calls=1 47
+47 72
+cfl=
+cfn=String::split
+calls=1 47
+47 122
+cfl=
+cfn=Array::each
+calls=3 52
+52 22054
+cfl=
+cfn=Array::count
+calls=3 75
+75 5
+cfl=
+cfn=Array::map
+calls=2 88
+88 487
+cfl=
+cfn=Array::sort
+calls=1 88
+88 91
+cfl=
+cfn=Array::uniq
+calls=1 88
+88 39
+cfl=
+cfn=Array::join
+calls=1 88
+88 15
+cfl=/Users/admin/VSCProjects/test/work.rb
+cfn=Object::collect_stats_from_users
+calls=7 109
+109 13216
+cfl=
+cfn=JSON/Ext/Generator/GeneratorMethods/Hash::to_json
+calls=1 143
+143 168
+cfl=
+cfn=IO::write^
+calls=1 143
+143 280
+
+fl=/Users/admin/VSCProjects/test/04-ruby-prof-callgrind.rb
+fn=[global]::
+7 18
+cfl=/Users/admin/VSCProjects/test/work.rb
+cfn=Object::work
+calls=1 7
+7 36602
+

@@ -1,0 +1,65 @@
+Measure Mode: wall_time
+Thread ID: 280
+Fiber ID: 260
+Total: 0.043478
+Sort by: self_time
+
+ %self      total      self      wait     child     calls  name                           location
+ 32.38      0.014     0.014     0.000     0.000       83   Array#select                   
+ 18.84      0.008     0.008     0.000     0.000      530   Array#all?                     
+ 11.54      0.042     0.005     0.000     0.037       10   Array#each                     
+  7.77      0.006     0.003     0.000     0.003      447   <Class::Date>#parse            
+  6.95      0.003     0.003     0.000     0.000     1061   String#split                   
+  5.08      0.009     0.002     0.000     0.007      915   Array#map                      
+  2.58      0.001     0.001     0.000     0.000      894   Regexp#match                   
+  2.04      0.001     0.001     0.000     0.000      447   String#gsub!                   
+  1.33      0.001     0.001     0.000     0.001      447   Object#parse_session           /Users/admin/VSCProjects/test/work.rb:27
+  1.03      0.001     0.000     0.000     0.000      167   Array#sort                     
+  0.99      0.001     0.000     0.000     0.000       83   Class#new                      
+  0.98      0.000     0.000     0.000     0.000        1   <Class::IO>#write              
+  0.86      0.000     0.000     0.000     0.000      447   MatchData#begin                
+  0.86      0.000     0.000     0.000     0.000      581   Hash#merge                     
+  0.85      0.000     0.000     0.000     0.000        1   <Class::IO>#read               
+  0.80      0.000     0.000     0.000     0.000      447   Date#iso8601                   
+  0.80      0.000     0.000     0.000     0.000     1221   String#upcase                  
+  0.59      0.000     0.000     0.000     0.000       83   Array#any?                     
+  0.44      0.000     0.000     0.000     0.000      894   String#to_i                    
+  0.44      0.000     0.000     0.000     0.000      899   Date#<=>                       
+  0.42      0.000     0.000     0.000     0.000      447   String#[]=                     
+  0.39      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::GeneratorMethods::Hash#to_json 
+  0.36      0.000     0.000     0.000     0.000       83   User#initialize                /Users/admin/VSCProjects/test/work.rb:11
+  0.25      0.000     0.000     0.000     0.000       83   Object#parse_user              /Users/admin/VSCProjects/test/work.rb:17
+  0.24      0.000     0.000     0.000     0.000      447   Integer#div                    
+  0.21      0.000     0.000     0.000     0.000       84   Array#join                     
+  0.18      0.000     0.000     0.000     0.000      447   MatchData#end                  
+  0.14      0.000     0.000     0.000     0.000      166   Integer#to_s                   
+  0.13      0.000     0.000     0.000     0.000       83   Array#reverse                  
+  0.10      0.000     0.000     0.000     0.000      166   String#+                       
+  0.09      0.000     0.000     0.000     0.000        1   Array#uniq                     
+  0.09      0.043     0.000     0.000     0.043        1   Object#work                    /Users/admin/VSCProjects/test/work.rb:46
+  0.05      0.000     0.000     0.000     0.000       83   Array#max                      
+  0.05      0.000     0.000     0.000     0.000       83   Array#sum                      
+  0.05      0.000     0.000     0.000     0.000       86   Array#count                    
+  0.04      0.043     0.000     0.000     0.043        1   [global]#                      01-ruby-prof-flat.rb:7
+  0.03      0.013     0.000     0.000     0.013        7   Object#collect_stats_from_users /Users/admin/VSCProjects/test/work.rb:38
+  0.01      0.000     0.000     0.000     0.000        1   Kernel#dup                     
+  0.00      0.000     0.000     0.000     0.000        1   Kernel#initialize_dup          
+  0.00      0.000     0.000     0.000     0.000        1   JSON::Ext::Generator::State#initialize_copy 
+
+* recursively called methods
+
+Columns are:
+
+  %self     - The percentage of time spent in this method, derived from self_time/total_time.
+  total     - The time spent in this method and its children.
+  self      - The time spent in this method.
+  wait      - The amount of time this method waited for other threads.
+  child     - The time spent in this method's children.
+  calls     - The number of times this method was called.
+  name      - The name of the method.
+  location  - The location of the method.
+
+The interpretation of method names is:
+
+  * MyObject#test - An instance method "test" of the class "MyObject"
+  * <Object:MyObject>#test - The <> characters indicate a method on a singleton class.
